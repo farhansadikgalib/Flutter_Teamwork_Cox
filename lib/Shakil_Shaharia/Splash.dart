@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/LoginPage.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -17,10 +18,10 @@ class _SplashState extends State<Splash> {
     // TODO: implement initState
     super.initState();
     Timer(
-        Duration(seconds: 100),
+        Duration(seconds: 5),
         () => Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(builder: (context) => Splash()),
+            MaterialPageRoute(builder: (context) => loginpage()),
             (route) => false));
   }
 
