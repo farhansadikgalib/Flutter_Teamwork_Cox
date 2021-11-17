@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/AdminLogin.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/AdminPage.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/Attendence.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/CoursesAdd.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/ForgetPassword.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/LoginPage.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/Splash.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/Student.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/StudentAddInfo.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/StudentDetails.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/StudentLogin.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/StudentToast.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/TeacherAddInfo.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/TeacherDashbord.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/TeacherLogin.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/ViewAttendence.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/ViewAttendenceSheet.dart';
 
 void main() {
   runApp(const MyApp());
