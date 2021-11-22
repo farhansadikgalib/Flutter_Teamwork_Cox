@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page32.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/ForgetPassword.dart';
 
 class loginpage extends StatefulWidget {
@@ -31,6 +33,7 @@ class _loginpageState extends State<loginpage> {
             Padding(
               padding: const EdgeInsets.only(right: 30.0, left: 30.0),
               child: TextFormField(
+                keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   fillColor: Color(0xCFA7FF9F),
                   filled: true,
@@ -49,6 +52,7 @@ class _loginpageState extends State<loginpage> {
             Padding(
               padding: const EdgeInsets.only(right: 30.0, left: 30.0),
               child: TextFormField(
+                keyboardType: TextInputType.visiblePassword,
                 decoration: InputDecoration(
                   fillColor: Color(0xCFA7FF9F),
                   filled: true,
@@ -82,7 +86,9 @@ class _loginpageState extends State<loginpage> {
                   height: 53,
                   width: 293,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> thirtytwo() ));
+                    },
                     child: Text(
                       'SIGN IN',
                       style: TextStyle(color: Colors.white),
