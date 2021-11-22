@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page14.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/TeacherAddInfo.dart';
 
 class seventeen extends StatefulWidget {
   const seventeen({Key? key}) : super(key: key);
@@ -11,7 +13,9 @@ class _seventeenState extends State<seventeen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),backgroundColor:Color(0xff013C58) ,),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> teacheraddinfo()));
+      },child: Icon(Icons.add),backgroundColor:Color(0xff013C58) ,),
       backgroundColor: Colors.grey.shade400,
       body: SafeArea(
         child: SingleChildScrollView(

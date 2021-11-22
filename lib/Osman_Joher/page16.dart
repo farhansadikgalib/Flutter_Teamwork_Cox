@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page17.dart';
 
 class pagesixteen extends StatefulWidget {
   const pagesixteen({Key? key}) : super(key: key);
@@ -96,7 +97,9 @@ class _pagesixteenState extends State<pagesixteen> {
                   decoration: BoxDecoration(
                     color: Color(0xff8F8686),
                     borderRadius: BorderRadius.circular(10),),
-                  child: FlatButton(onPressed: (){}, child: Text("NEXT")),
+                  child: FlatButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> seventeen()));
+                  }, child: Text("NEXT")),
 
                 ),
               )

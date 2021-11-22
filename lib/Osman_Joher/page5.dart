@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page6.dart';
 
 class pagefive extends StatefulWidget {
   const pagefive({Key? key}) : super(key: key);
@@ -54,60 +55,80 @@ class _pagefiveState extends State<pagefive> {
                 color: Colors.grey.shade300,
                 child: GridView.count(crossAxisCount: 2,
                   children: [
-                    Card(
-                      color: Colors.white,
-                      child: Stack(
-                        children: [
-                          Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
-                          Container(
-                              margin: EdgeInsets.only(left: 65,top: 140),
-                              child: Text('CSE',style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                              ),))
-                        ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> pagesix()));
+                      },
+                      child: Card(
+                        color: Colors.white,
+                        child: Stack(
+                          children: [
+                            Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
+                            Container(
+                                margin: EdgeInsets.only(left: 65,top: 140),
+                                child: Text('CSE',style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),))
+                          ],
+                        ),
                       ),
                     ),
-                    Card(
-                      color: Colors.white,
-                      child: Stack(
-                        children: [
-                          Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
-                          Container(
-                              margin: EdgeInsets.only(left: 65,top: 140),
-                              child: Text('BBA',style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                              ),))
-                        ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> pagesix()));
+                      },
+                      child: Card(
+                        color: Colors.white,
+                        child: Stack(
+                          children: [
+                            Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
+                            Container(
+                                margin: EdgeInsets.only(left: 65,top: 140),
+                                child: Text('BBA',style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),))
+                          ],
+                        ),
                       ),
                     ),
-                    Card(
-                      color: Colors.white,
-                      child: Stack(
-                        children: [
-                          Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
-                          Container(
-                              margin: EdgeInsets.only(left: 65,top: 140),
-                              child: Text('BTHM',style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                              ),))
-                        ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> pagesix()));
+                      },
+                      child: Card(
+                        color: Colors.white,
+                        child: Stack(
+                          children: [
+                            Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
+                            Container(
+                                margin: EdgeInsets.only(left: 65,top: 140),
+                                child: Text('BTHM',style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),))
+                          ],
+                        ),
                       ),
                     ),
-                    Card(
-                      color: Colors.white,
-                      child: Stack(
-                        children: [
-                          Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
-                          Container(
-                              margin: EdgeInsets.only(left: 65,top: 140),
-                              child: Text('MBA',style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold
-                              ),))
-                        ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> pagesix()));
+                      },
+                      child: Card(
+                        color: Colors.white,
+                        child: Stack(
+                          children: [
+                            Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
+                            Container(
+                                margin: EdgeInsets.only(left: 65,top: 140),
+                                child: Text('MBA',style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),))
+                          ],
+                        ),
                       ),
                     ),
 

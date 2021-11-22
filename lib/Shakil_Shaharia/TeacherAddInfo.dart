@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page17.dart';
 
 class teacheraddinfo extends StatefulWidget {
   const teacheraddinfo({Key? key}) : super(key: key);
@@ -141,8 +142,10 @@ class _teacheraddinfoState extends State<teacheraddinfo> {
                   width: 370,
                   height: 50,
                   child: RaisedButton(
-                    onPressed: () {},
-                    child: Text('ADD STUDENT',style: TextStyle(fontSize: 18),),
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> seventeen()));
+                    },
+                    child: Text('ADD Teacher',style: TextStyle(fontSize: 18),),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     color: Color(0xFF8F8686),

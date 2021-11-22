@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page13.dart';
+import 'package:flutter_teamwork/Osman_Joher/page14.dart';
+import 'package:flutter_teamwork/Osman_Joher/page20.dart';
 
 class pagenineteen extends StatefulWidget {
   const pagenineteen({Key? key}) : super(key: key);
@@ -21,11 +24,13 @@ class _pagenineteenState extends State<pagenineteen> {
                 height: 30,
                 color: Color(0xff145777),
                 child: Center(
-                  child: Text('DIIT',style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25,
-                      fontWeight: FontWeight.w700
-                  ),),
+                  child: Text(
+                    'DIIT',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.w700),
+                  ),
                 ),
               ),
               Container(
@@ -33,14 +38,18 @@ class _pagenineteenState extends State<pagenineteen> {
                 height: 50,
                 color: Color(0xff013C58),
                 child: Center(
-                  child: Text('DAFFODIL INSTITUTE OF IT',style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25,
-                      fontWeight: FontWeight.w400
-                  ),),
+                  child: Text(
+                    'DAFFODIL INSTITUTE OF IT',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.w400),
+                  ),
                 ),
               ),
-              SizedBox(height: 120,),
+              SizedBox(
+                height: 120,
+              ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
@@ -49,19 +58,24 @@ class _pagenineteenState extends State<pagenineteen> {
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(
                         color: Colors.black,
-                        width: 1,)),
+                        width: 1,
+                      )),
                   child: DropdownButtonFormField(
-                      hint: Text('Select Department'),onChanged: (val){
-                    setState(() {
-                      print(val);
-                    });
-                  },
-
+                      hint: Text('Select Department'),
+                      onChanged: (val) {
+                        setState(() {
+                          print(val);
+                        });
+                      },
                       items: [
-                        DropdownMenuItem(child: Text('CSE'),
-                          value: 'CSE',),
-                        DropdownMenuItem(child: Text('MBA'),
-                          value: 'MBA',)
+                        DropdownMenuItem(
+                          child: Text('CSE'),
+                          value: 'CSE',
+                        ),
+                        DropdownMenuItem(
+                          child: Text('MBA'),
+                          value: 'MBA',
+                        )
                       ]),
                 ),
               ),
@@ -73,19 +87,24 @@ class _pagenineteenState extends State<pagenineteen> {
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(
                         color: Colors.black,
-                        width: 1,)),
+                        width: 1,
+                      )),
                   child: DropdownButtonFormField(
-                      hint: Text('Select Shift '),onChanged: (val){
-                    setState(() {
-                      print(val);
-                    });
-                  },
-
+                      hint: Text('Select Shift '),
+                      onChanged: (val) {
+                        setState(() {
+                          print(val);
+                        });
+                      },
                       items: [
-                        DropdownMenuItem(child: Text('Day'),
-                          value: 'Day',),
-                        DropdownMenuItem(child: Text('Night'),
-                          value: 'Night',)
+                        DropdownMenuItem(
+                          child: Text('Day'),
+                          value: 'Day',
+                        ),
+                        DropdownMenuItem(
+                          child: Text('Night'),
+                          value: 'Night',
+                        )
                       ]),
                 ),
               ),
@@ -95,9 +114,11 @@ class _pagenineteenState extends State<pagenineteen> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Color(0xff8F8686),
-                    borderRadius: BorderRadius.circular(10),),
-                  child: FlatButton(onPressed: (){}, child: Text("NEXT")),
-
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: FlatButton(onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> twentyone()));
+                  }, child: Text("NEXT")),
                 ),
               )
             ],

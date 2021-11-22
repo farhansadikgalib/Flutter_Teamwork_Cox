@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page13.dart';
+import 'package:flutter_teamwork/Osman_Joher/page16.dart';
+import 'package:flutter_teamwork/Osman_Joher/page19.dart';
 
 class adminpage extends StatefulWidget {
   const adminpage({Key? key}) : super(key: key);
@@ -44,6 +47,9 @@ class _adminpageState extends State<adminpage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> pagethirteen()));
+                  },
                   child: Container(
                     height: 130,
                     width: 137,
@@ -56,12 +62,15 @@ class _adminpageState extends State<adminpage> {
                       children: [
                         Image.asset('images/admin1.png',
                           width: 50,),
-                        Text('Admin Panel',style: TextStyle(fontWeight: FontWeight.bold),)
+                        Text('Student List',style: TextStyle(fontWeight: FontWeight.bold),)
                       ],
                     ),
                   ),
                 ),
                 GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> pagesixteen()));
+                  },
                   child: Container(
                     height: 130,
                     width: 137,
@@ -74,7 +83,7 @@ class _adminpageState extends State<adminpage> {
                       children: [
                         Image.asset('images/teacher.png',
                           width: 50,),
-                        Text('Teacher',style: TextStyle(fontWeight: FontWeight.bold),)
+                        Text('Teacher List',style: TextStyle(fontWeight: FontWeight.bold),)
                       ],
                     ),
                   ),
@@ -88,6 +97,9 @@ class _adminpageState extends State<adminpage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> pagenineteen()));
+                  },
                   child: Container(
                     height: 130,
                     width: 137,
@@ -100,7 +112,7 @@ class _adminpageState extends State<adminpage> {
                       children: [
                         Image.asset('images/student.png',
                           width: 50,),
-                        Text('Student',style: TextStyle(fontWeight: FontWeight.bold),)
+                        Text('Course List',style: TextStyle(fontWeight: FontWeight.bold),)
                       ],
                     ),
                   ),

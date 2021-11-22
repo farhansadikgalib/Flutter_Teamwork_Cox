@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/AdminPage.dart';
 
 import 'ForgetPassword.dart';
 
@@ -103,7 +104,9 @@ class _adminloginState extends State<adminlogin> {
                     height: 53,
                     width: 336,
                     child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> adminpage()));
+                      },
                       child: Text(
                         'Login',
                         style: TextStyle(color: Colors.white,fontSize: 18),

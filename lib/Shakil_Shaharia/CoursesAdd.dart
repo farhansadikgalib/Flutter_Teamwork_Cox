@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page20.dart';
 
 class coursesadd extends StatefulWidget {
   const coursesadd({Key? key}) : super(key: key);
@@ -172,7 +173,9 @@ class _coursesaddState extends State<coursesadd> {
               width: 370,
               height: 50,
               child: RaisedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> twentyone()));
+                },
                 child: Text('ADD COURSE',style: TextStyle(fontSize: 18),),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),

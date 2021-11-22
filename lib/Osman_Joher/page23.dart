@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page25.dart';
 
 class twenthree extends StatefulWidget {
   const twenthree({Key? key}) : super(key: key);
@@ -93,7 +94,9 @@ class _twenthreeState extends State<twenthree> {
                   decoration: BoxDecoration(
                     color: Color(0xff8F8686),
                     borderRadius: BorderRadius.circular(10),),
-                  child: FlatButton(onPressed: (){}, child: Text("NEXT")),
+                  child: FlatButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> twentyfive()));
+                  }, child: Text("NEXT")),
 
                 ),
               )

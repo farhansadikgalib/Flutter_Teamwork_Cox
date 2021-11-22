@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page14.dart';
 
 class pagethirteen extends StatefulWidget {
   const pagethirteen({Key? key}) : super(key: key);
@@ -120,7 +121,9 @@ class _pagethirteenState extends State<pagethirteen> {
                   decoration: BoxDecoration(
                       color: Color(0xff8F8686),
                       borderRadius: BorderRadius.circular(10),),
-                  child: FlatButton(onPressed: (){}, child: Text("NEXT")),
+                  child: FlatButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> pagefourteen()));
+                  }, child: Text("NEXT")),
 
                 ),
               )

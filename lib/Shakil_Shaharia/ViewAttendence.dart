@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/ViewAttendenceSheet.dart';
 
 class viewAttendence extends StatefulWidget {
   const viewAttendence({Key? key}) : super(key: key);
@@ -75,7 +76,9 @@ class _viewAttendenceState extends State<viewAttendence> {
                 width: 370,
                 height: 50,
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> viewattendencesheet()));
+                  },
                   child: Text('Next',style: TextStyle(fontSize: 18),),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/CoursesAdd.dart';
 
 class twentyone extends StatefulWidget {
   const twentyone({Key? key}) : super(key: key);
@@ -11,7 +12,9 @@ class _twentyoneState extends State<twentyone> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),backgroundColor:Color(0xff013C58) ,),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> coursesadd()));
+      },child: Icon(Icons.add),backgroundColor:Color(0xff013C58) ,),
       backgroundColor: Colors.grey.shade400,
       body: SafeArea(
         child: SingleChildScrollView(

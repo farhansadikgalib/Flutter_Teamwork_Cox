@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/StudentDetails.dart';
 
 class studentlogin extends StatefulWidget {
   const studentlogin({Key? key}) : super(key: key);
@@ -101,7 +102,9 @@ class _studentloginState extends State<studentlogin> {
                     height: 53,
                     width: 336,
                     child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> studentdetails()));
+                      },
                       child: Text(
                         'Login',
                         style: TextStyle(color: Colors.white,fontSize: 18),

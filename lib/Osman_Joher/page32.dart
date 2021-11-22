@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_teamwork/Osman_Joher/page5.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/Attendence.dart';
 
 class thirtytwo extends StatefulWidget {
   const thirtytwo({Key? key}) : super(key: key);
@@ -160,18 +162,23 @@ class _thirtytwoState extends State<thirtytwo> {
                 color: Colors.grey.shade300,
                 child: GridView.count(crossAxisCount: 2,
                   children: [
-                    Card(
-                      color: Color(0xffF8EFEF),
-                      child: Stack(
-                        children: [
-                          Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
-                          Container(
-                              margin: EdgeInsets.only(left: 40,top: 140),
-                              child: Text('Question Bank',style: TextStyle(
-                                  color: Colors.purple,
-                                  fontWeight: FontWeight.bold
-                              ),))
-                        ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> pagefive()));
+                      },
+                      child: Card(
+                        color: Color(0xffF8EFEF),
+                        child: Stack(
+                          children: [
+                            Center(child: Image.asset('assets/q.png',width: 90,height: 90,)),
+                            Container(
+                                margin: EdgeInsets.only(left: 40,top: 140),
+                                child: Text('Question Bank',style: TextStyle(
+                                    color: Colors.purple,
+                                    fontWeight: FontWeight.bold
+                                ),))
+                          ],
+                        ),
                       ),
                     ),
                     Card(
@@ -188,32 +195,41 @@ class _thirtytwoState extends State<thirtytwo> {
                         ],
                       ),
                     ),
-                    Card(
-                      color: Color(0xffF8EFEF),
-                      child: Stack(
-                        children: [
-                          Center(child: Image.asset('assets/club.png',width: 90,height: 90,)),
-                          Container(
-                              margin: EdgeInsets.only(left: 65,top: 140),
-                              child: Text('CLUB',style: TextStyle(
-                                  color: Colors.purple,
-                                  fontWeight: FontWeight.bold
-                              ),))
-                        ],
+                    GestureDetector(
+                      onTap: (){
+                      },
+                      child: Card(
+                        color: Color(0xffF8EFEF),
+                        child: Stack(
+                          children: [
+                            Center(child: Image.asset('assets/club.png',width: 90,height: 90,)),
+                            Container(
+                                margin: EdgeInsets.only(left: 65,top: 140),
+                                child: Text('CLUB',style: TextStyle(
+                                    color: Colors.purple,
+                                    fontWeight: FontWeight.bold
+                                ),))
+                          ],
+                        ),
                       ),
                     ),
-                    Card(
-                      color: Color(0xffF8EFEF),
-                      child: Stack(
-                        children: [
-                          Center(child: Image.asset('assets/ggr.png',width: 90,height: 90,)),
-                          Container(
-                              margin: EdgeInsets.only(left: 65,top: 140),
-                              child: Text('Attendence',style: TextStyle(
-                                  color: Colors.purple,
-                                  fontWeight: FontWeight.bold
-                              ),))
-                        ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> attendence()));
+                      },
+                      child: Card(
+                        color: Color(0xffF8EFEF),
+                        child: Stack(
+                          children: [
+                            Center(child: Image.asset('assets/ggr.png',width: 90,height: 90,)),
+                            Container(
+                                margin: EdgeInsets.only(left: 65,top: 140),
+                                child: Text('Attendence',style: TextStyle(
+                                    color: Colors.purple,
+                                    fontWeight: FontWeight.bold
+                                ),))
+                          ],
+                        ),
                       ),
                     ),
 

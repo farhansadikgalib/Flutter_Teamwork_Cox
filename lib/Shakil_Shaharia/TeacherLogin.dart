@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/TeacherDashbord.dart';
 
 class teacherlogin extends StatefulWidget {
   const teacherlogin({Key? key}) : super(key: key);
@@ -101,7 +102,9 @@ class _teacherloginState extends State<teacherlogin> {
                     height: 53,
                     width: 336,
                     child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> teacherdashbord()));
+                      },
                       child: Text(
                         'Login',
                         style: TextStyle(color: Colors.white,fontSize: 18),

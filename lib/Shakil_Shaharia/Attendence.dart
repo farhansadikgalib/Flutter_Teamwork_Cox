@@ -1,6 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/AdminLogin.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/AdminPage.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/StudentLogin.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/TeacherLogin.dart';
 
 class attendence extends StatefulWidget {
   const attendence({Key? key}) : super(key: key);
@@ -64,6 +67,9 @@ class _attendenceState extends State<attendence> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> adminlogin()));
+                  },
                   child: Container(
                     height: 130,
                     width: 137,
@@ -82,6 +88,9 @@ class _attendenceState extends State<attendence> {
                   ),
                 ),
                 GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> teacherlogin()));
+                  },
                   child: Container(
                     height: 130,
                     width: 137,
@@ -108,6 +117,9 @@ class _attendenceState extends State<attendence> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> studentlogin()));
+                  },
                   child: Container(
                     height: 130,
                     width: 137,

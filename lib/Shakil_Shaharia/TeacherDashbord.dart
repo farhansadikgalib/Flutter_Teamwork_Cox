@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page23.dart';
+import 'package:flutter_teamwork/Shakil_Shaharia/ViewAttendence.dart';
 
 class teacherdashbord extends StatefulWidget {
   const teacherdashbord({Key? key}) : super(key: key);
@@ -75,50 +77,60 @@ class _teacherdashbordState extends State<teacherdashbord> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    height: 150,
-                    width: 185,
-                    decoration: BoxDecoration(
-                        color: Color(0xFFC4C4C4),
-                        borderRadius: BorderRadius.circular(5)),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          'images/viewattendence.png',
-                          width: 66,
-                          height: 70,
-                        ),
-                        Text(
-                          'View Attendence',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF174756)),
-                        )
-                      ],
+                  GestureDetector(
+                    onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> viewAttendence()));
+            },
+                    child: Container(
+                      height: 150,
+                      width: 185,
+                      decoration: BoxDecoration(
+                          color: Color(0xFFC4C4C4),
+                          borderRadius: BorderRadius.circular(5)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            'images/viewattendence.png',
+                            width: 66,
+                            height: 70,
+                          ),
+                          Text(
+                            'View Attendence',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF174756)),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  Container(
-                    height: 150,
-                    width: 185,
-                    decoration: BoxDecoration(
-                        color: Color(0xFFC4C4C4),
-                        borderRadius: BorderRadius.circular(5)),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          'images/takeattendence.png',
-                          width: 66,
-                          height: 70,
-                        ),
-                        Text(
-                          'Take Attendence',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF174756)),
-                        )
-                      ],
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> twenthree()));
+                    },
+                    child: Container(
+                      height: 150,
+                      width: 185,
+                      decoration: BoxDecoration(
+                          color: Color(0xFFC4C4C4),
+                          borderRadius: BorderRadius.circular(5)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            'images/takeattendence.png',
+                            width: 66,
+                            height: 70,
+                          ),
+                          Text(
+                            'Take Attendence',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xFF174756)),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],

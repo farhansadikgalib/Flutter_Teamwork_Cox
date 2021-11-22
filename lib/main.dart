@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_teamwork/Osman_Joher/page13.dart';
+import 'package:flutter_teamwork/Osman_Joher/page14.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/AdminLogin.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/AdminPage.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/Attendence.dart';
