@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page14.dart';
+import 'package:flutter_teamwork/Osman_Joher/StudentInfo.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/TeacherAddInfo.dart';
 
 class seventeen extends StatefulWidget {

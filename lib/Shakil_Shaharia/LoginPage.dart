@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page32.dart';
+import 'package:flutter_teamwork/Osman_Joher/GooglePixel2xl5.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/ForgetPassword.dart';
 
 class loginpage extends StatefulWidget {

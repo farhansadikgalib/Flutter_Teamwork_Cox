@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page25.dart';
+import 'package:flutter_teamwork/Osman_Joher/TeacherInfo.dart';
 
-class twenthree extends StatefulWidget {
-  const twenthree({Key? key}) : super(key: key);
+class pagesixteen extends StatefulWidget {
+  const pagesixteen({Key? key}) : super(key: key);
 
   @override
-  _twenthreeState createState() => _twenthreeState();
+  _pagesixteenState createState() => _pagesixteenState();
 }
 
-class _twenthreeState extends State<twenthree> {
+class _pagesixteenState extends State<pagesixteen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +52,7 @@ class _twenthreeState extends State<twenthree> {
                         color: Colors.black,
                         width: 1,)),
                   child: DropdownButtonFormField(
-                      hint: Text('Select Course'),onChanged: (val){
+                      hint: Text('Select Department'),onChanged: (val){
                     setState(() {
                       print(val);
                     });
@@ -68,23 +68,26 @@ class _twenthreeState extends State<twenthree> {
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 250,
-                      decoration: BoxDecoration(
-                          color: Color(0xffCDC6C6),
-                          borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: 'Pick a Date'
-                        ),
-                      ),
-                    ),
-                    Spacer(),
-                    Icon(Icons.date_range,size: 40,color: Color(0xff013C58),)
-                  ],
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Color(0xffCDC6C6),
+                      borderRadius: BorderRadius.circular(5),
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,)),
+                  child: DropdownButtonFormField(
+                      hint: Text('Select Shift '),onChanged: (val){
+                    setState(() {
+                      print(val);
+                    });
+                  },
+
+                      items: [
+                        DropdownMenuItem(child: Text('Day'),
+                          value: 'Day',),
+                        DropdownMenuItem(child: Text('Night'),
+                          value: 'Night',)
+                      ]),
                 ),
               ),
               Padding(
@@ -95,7 +98,7 @@ class _twenthreeState extends State<twenthree> {
                     color: Color(0xff8F8686),
                     borderRadius: BorderRadius.circular(10),),
                   child: FlatButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> twentyfive()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> seventeen()));
                   }, child: Text("NEXT")),
 
                 ),

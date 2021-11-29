@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page14.dart';
-import 'package:flutter_teamwork/Osman_Joher/page17.dart';
+import 'package:flutter_teamwork/Osman_Joher/StudentInfo.dart';
+import 'package:flutter_teamwork/Osman_Joher/TeacherInfo.dart';
 
 class studentaddinfo extends StatefulWidget {
   const studentaddinfo({Key? key}) : super(key: key);

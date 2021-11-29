@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page6.dart';
+import 'package:flutter_teamwork/Osman_Joher/deptOfCse.dart';
 
 class pagefive extends StatefulWidget {
   const pagefive({Key? key}) : super(key: key);

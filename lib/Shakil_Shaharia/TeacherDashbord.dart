@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page23.dart';
+import 'package:flutter_teamwork/Osman_Joher/TeacherAttendence.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/ViewAttendence.dart';
 
 class teacherdashbord extends StatefulWidget {

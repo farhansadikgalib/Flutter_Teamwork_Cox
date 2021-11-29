@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page17.dart';
+import 'package:flutter_teamwork/Osman_Joher/TeacherInfo.dart';
 
 class teacheraddinfo extends StatefulWidget {
   const teacheraddinfo({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_teamwork/Osman_Joher/page5.dart';
+import 'package:flutter_teamwork/Osman_Joher/questionPage.dart';
 import 'package:flutter_teamwork/Shakil_Shaharia/Attendence.dart';
 
 class thirtytwo extends StatefulWidget {

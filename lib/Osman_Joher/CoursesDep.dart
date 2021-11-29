@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page13.dart';
-import 'package:flutter_teamwork/Osman_Joher/page14.dart';
-import 'package:flutter_teamwork/Osman_Joher/page20.dart';
+import 'package:flutter_teamwork/Osman_Joher/StudentDep.dart';
+import 'package:flutter_teamwork/Osman_Joher/StudentInfo.dart';
+import 'package:flutter_teamwork/Osman_Joher/CourseInfo.dart';
 
 class pagenineteen extends StatefulWidget {
   const pagenineteen({Key? key}) : super(key: key);

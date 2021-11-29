@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page20.dart';
+import 'package:flutter_teamwork/Osman_Joher/CourseInfo.dart';
 
 class coursesadd extends StatefulWidget {
   const coursesadd({Key? key}) : super(key: key);

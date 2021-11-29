@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page14.dart';
+import 'package:flutter_teamwork/Osman_Joher/TeacherAttendenceSheet.dart';
 
-class pagethirteen extends StatefulWidget {
-  const pagethirteen({Key? key}) : super(key: key);
+class twenthree extends StatefulWidget {
+  const twenthree({Key? key}) : super(key: key);
 
   @override
-  _pagethirteenState createState() => _pagethirteenState();
+  _twenthreeState createState() => _twenthreeState();
 }
 
-class _pagethirteenState extends State<pagethirteen> {
+class _twenthreeState extends State<twenthree> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,18 +41,18 @@ class _pagethirteenState extends State<pagethirteen> {
                   ),),
                 ),
               ),
-              SizedBox(height: 70,),
+              SizedBox(height: 120,),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Color(0xffCDC6C6),
+                      color: Color(0xffCDC6C6),
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(
                         color: Colors.black,
                         width: 1,)),
                   child: DropdownButtonFormField(
-                      hint: Text('Select Department'),onChanged: (val){
+                      hint: Text('Select Course'),onChanged: (val){
                     setState(() {
                       print(val);
                     });
@@ -68,50 +68,23 @@ class _pagethirteenState extends State<pagethirteen> {
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xffCDC6C6),
-                      borderRadius: BorderRadius.circular(5),
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 1,)),
-                  child: DropdownButtonFormField(
-                      hint: Text('Select Batch '),onChanged: (val){
-                    setState(() {
-                      print(val);
-                    });
-                  },
-
-                      items: [
-                        DropdownMenuItem(child: Text('2016'),
-                          value: '2016',),
-                        DropdownMenuItem(child: Text('2017'),
-                          value: '2017',)
-                      ]),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xffCDC6C6),
-                      borderRadius: BorderRadius.circular(5),
-                      border: Border.all(
-                        color: Colors.black,
-                        width: 1,)),
-                  child: DropdownButtonFormField(
-                      hint: Text('Select Shift '),onChanged: (val){
-                    setState(() {
-                      print(val);
-                    });
-                  },
-
-                      items: [
-                        DropdownMenuItem(child: Text('Day'),
-                          value: 'Day',),
-                        DropdownMenuItem(child: Text('Night'),
-                          value: 'Night',)
-                      ]),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 250,
+                      decoration: BoxDecoration(
+                          color: Color(0xffCDC6C6),
+                          borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Pick a Date'
+                        ),
+                      ),
+                    ),
+                    Spacer(),
+                    Icon(Icons.date_range,size: 40,color: Color(0xff013C58),)
+                  ],
                 ),
               ),
               Padding(
@@ -119,10 +92,10 @@ class _pagethirteenState extends State<pagethirteen> {
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                      color: Color(0xff8F8686),
-                      borderRadius: BorderRadius.circular(10),),
+                    color: Color(0xff8F8686),
+                    borderRadius: BorderRadius.circular(10),),
                   child: FlatButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> pagefourteen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> twentyfive()));
                   }, child: Text("NEXT")),
 
                 ),

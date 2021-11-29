@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page17.dart';
+import 'package:flutter_teamwork/Osman_Joher/StudentInfo.dart';
 
-class pagesixteen extends StatefulWidget {
-  const pagesixteen({Key? key}) : super(key: key);
+class pagethirteen extends StatefulWidget {
+  const pagethirteen({Key? key}) : super(key: key);
 
   @override
-  _pagesixteenState createState() => _pagesixteenState();
+  _pagethirteenState createState() => _pagethirteenState();
 }
 
-class _pagesixteenState extends State<pagesixteen> {
+class _pagethirteenState extends State<pagethirteen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,12 +41,12 @@ class _pagesixteenState extends State<pagesixteen> {
                   ),),
                 ),
               ),
-              SizedBox(height: 120,),
+              SizedBox(height: 70,),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Color(0xffCDC6C6),
+                    color: Color(0xffCDC6C6),
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(
                         color: Colors.black,
@@ -70,7 +70,31 @@ class _pagesixteenState extends State<pagesixteen> {
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Color(0xffCDC6C6),
+                    color: Color(0xffCDC6C6),
+                      borderRadius: BorderRadius.circular(5),
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1,)),
+                  child: DropdownButtonFormField(
+                      hint: Text('Select Batch '),onChanged: (val){
+                    setState(() {
+                      print(val);
+                    });
+                  },
+
+                      items: [
+                        DropdownMenuItem(child: Text('2016'),
+                          value: '2016',),
+                        DropdownMenuItem(child: Text('2017'),
+                          value: '2017',)
+                      ]),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xffCDC6C6),
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(
                         color: Colors.black,
@@ -95,10 +119,10 @@ class _pagesixteenState extends State<pagesixteen> {
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
-                    color: Color(0xff8F8686),
-                    borderRadius: BorderRadius.circular(10),),
+                      color: Color(0xff8F8686),
+                      borderRadius: BorderRadius.circular(10),),
                   child: FlatButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> seventeen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> pagefourteen()));
                   }, child: Text("NEXT")),
 
                 ),

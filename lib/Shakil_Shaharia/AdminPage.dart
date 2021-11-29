@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_teamwork/Osman_Joher/page13.dart';
-import 'package:flutter_teamwork/Osman_Joher/page16.dart';
-import 'package:flutter_teamwork/Osman_Joher/page19.dart';
+import 'package:flutter_teamwork/Osman_Joher/StudentDep.dart';
+import 'package:flutter_teamwork/Osman_Joher/TeacherDep.dart';
+import 'package:flutter_teamwork/Osman_Joher/CoursesDep.dart';
 
 class adminpage extends StatefulWidget {
   const adminpage({Key? key}) : super(key: key);
